@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* Con las siguientes lineas, declaramos una pantalla que no genere scroll. Es decir, que no sobrepase la visualización de los elementos renderizados */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../assets/img/Cover.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+/* Reglas para el header */
+
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+header .header_icons_container{
+    width: 100%;
+    height: 50px;
+    display: inherit;
+    background-color: #47CFAC;
+}
+
+header .header_icons_container .icons{
+    display: flex;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .header_icons_container .icons span{
+    color: white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 90px;
+    background-color: transparent;
+}
+
+nav .nav_logo_container{
+    margin-left: 50px;
+}
+
+nav .nav_logo_container img{
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile_link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile_link a{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* Reglas para el main */
+
+main {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main section h1{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+main section button{
+    background-color: #47CFAC;
+    color: black;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border: none;
+    /* font-size: 20px; */
+    outline: none;
+    cursor: pointer;
+}
