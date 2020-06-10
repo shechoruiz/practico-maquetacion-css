@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;500;900&family=Roboto:wght@400;700&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+*/
+
 body{
     margin: 0;
     padding: 0;
@@ -7,9 +15,7 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url('../assets/img/Cover.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    font-family: 'Roboto Mono', monospace;
 }
 
 a{
@@ -52,7 +58,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 90px;
-    background-color: transparent;
+    background-color: white;
 }
 
 nav .nav_logo_container{
@@ -72,35 +78,50 @@ nav .profile_link{
 }
 
 nav .profile_link a{
-    color: white;
-    border-bottom: 1px solid white;
+    color: black;
+    border-bottom: 1px solid black;
 }
 
 /* Reglas para el main */
 
-main {
-    width: 100%;
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home_main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: calc(100vh - 140px);
+    background-image: url('../assets/img/Cover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home_main section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.home_main_text{
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
     text-align: center;
 }
 
-main section h1{
-    color: white;
-    font-size: 42px;
-    font-weight: bold;
+.home_main_button{
+    width: 110px;
+    height: 50px;
+    background-color: #47CFAC;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
 }
 
-main section button{
-    background-color: #47CFAC;
-    color: black;
-    font-weight: bold;
-    width: 150px;
-    height: 40px;
-    border: none;
-    /* font-size: 20px; */
-    outline: none;
-    cursor: pointer;
+.home_main_button a{
+    font-weight: 700;
+    font-size: 18px;
 }
