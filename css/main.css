@@ -298,6 +298,7 @@ footer p{
 }
 
 .profile_posts_container{
+    /* display: grid; */
     padding: 0 50px 40px;
 }
 
